@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "small project to serve as an artifact for testing CI/CD workflows",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

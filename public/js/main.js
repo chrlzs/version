@@ -1,4 +1,4 @@
-const version = 1;
+import Version from './version.js';
 
 class App {
   static init() {
@@ -6,6 +6,8 @@ class App {
   }
 
   static updateVersionText() {
+    let ver = new Version();
+    let version = ver.getVersion();
     let span = document.getElementById("version");
     span.textContent = version;
     this.setPageTitle(version);
